@@ -4,12 +4,16 @@
   },
   "name": "api-wryzen-newlabs",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amandalfs",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/filesystem": "^0.0.32",
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  }
 }
