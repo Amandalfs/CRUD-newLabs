@@ -1,5 +1,5 @@
 const pg = require('pg');
-require('dotenv/config');
+/* require('dotenv/config'); */
 const client = new pg.Client ({
     host:process.env.PQ_HOST,
     user:process.env.PQ_NAMEHOST,
