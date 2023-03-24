@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "pg": "^8.10.0",
     "sequelize": "^6.29.3"
@@ -12,11 +13,13 @@
   },
   "author": "Amandalfs",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/filesystem": "^0.0.32",
-    "@types/node": "^18.14.2",
-    "typescript": "^4.9.5"
-  }
+  "description": "DOCUMENTACAO  API NewLabs Wryzen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amandalfs/CRUD-newLabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amandalfs/CRUD-newLabs/issues"
+  },
+  "homepage": "https://github.com/Amandalfs/CRUD-newLabs#readme"
 }

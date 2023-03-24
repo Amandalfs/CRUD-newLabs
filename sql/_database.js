@@ -1,10 +1,11 @@
 const pg = require('pg');
+require('dotenv/config');
 
 const client = new pg.Client ({
-    host: 'kandula.db.elephantsql.com',
-    user: 'hptbrjiw',
-    database: 'hptbrjiw',
-    password: 'tfEdZGSBa2QCRpa0USa7GW_yZTQjvdBO',
+    host: process.env.PQ_NAMEHOST,
+    user: process.env.PQ_DATABASE,
+    database: process.env.PQ_HOST,
+    password: PQ_PASSWORD,
     port: 5432,
     ssl: true
 })
