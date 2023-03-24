@@ -5,7 +5,7 @@ const client = new pg.Client ({
     host: process.env.PQ_NAMEHOST,
     user: process.env.PQ_DATABASE,
     database: process.env.PQ_HOST,
-    password: PQ_PASSWORD,
+    password: process.env.PQ_PASSWORD,
     port: 5432,
     ssl: true
 })
