@@ -1,13 +1,15 @@
-const pg = require('pg');
-/* require('dotenv/config'); */
-const client = new pg.Client ({
+const { Pool } = require('pg');
+require('dotenv/config');
+
+const pool = new Pool({
     host:process.env.PQ_HOST,
-    user:process.env.PQ_NAMEHOST,
-    database:process.env.PQ_DATABASE,
-    password:process.env.PQ_PASSWORD,
     port:5432,
-    ssl:true
+    user:process.env.PQ_NAMEHOST,
+    password:process.env.PQ_PASSWORD,
+    database:process.env.PQ_DATABASE,
+    ssl:false,
 })
 
-module.exports = client;
+
+module.exports = pool;
 

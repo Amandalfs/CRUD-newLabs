@@ -1,9 +1,7 @@
-const db = require('./_database');
+const pool = require('./_database');
 
 async function selectTables(){
-    await db.connect();
-    const dados = await db.query('SELECT * FROM "public"."dadosnewlabs"');
-    await db.end();
+    const dados = await pool.query('SELECT * FROM "public"."dadosnewlabs"');
     return dados.rows
 }
 

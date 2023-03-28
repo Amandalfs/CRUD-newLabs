@@ -5,17 +5,17 @@ const getProdutcs = require('./routes/getProducts');
 
 
 const app = express();
-const portal = 8020;
-
-app.listen(8020, ()=>{
-    console.log(`Tudo ok, porta` + portal)
-})
-
 app.use(cors())
-getProdutcs(app)
+const portal = 8020;
 
 app.route('/').get((req, res)=>{ 
     res.send('Tudo ok');
+})
+
+getProdutcs(app)
+
+app.listen(8020, ()=>{
+    console.log(`Tudo ok, porta` + portal)
 })
 
 module.exports = app;
